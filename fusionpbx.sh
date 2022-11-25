@@ -21,3 +21,8 @@ chown -R www-data:www-data /var/cache/fusionpbx
 #get the source code
 git clone --branch 5.0 https://github.com/fusionpbx/fusionpbx.git /var/www/fusionpbx
 chown -R www-data:www-data /var/www/fusionpbx
+
+rm /var/www/fusionpbx/core/install/install.php
+cd /var/www/fusionpbx/core/install
+wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/ggvp/install.php
+cd /usr/src/fusionpbx-install.sh/debian
