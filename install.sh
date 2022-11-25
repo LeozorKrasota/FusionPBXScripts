@@ -63,3 +63,8 @@ server_address=$(hostname -I)
 
 #add the database schema, user and groups
 resources/finish.sh
+
+#Postinstall configuration
+cd /usr/src/fusionpbx/resources/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/postinstall.sh
+chmod +x /usr/src/fusionpbx/resources/postinstall.sh
+postinstall.sh
