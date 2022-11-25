@@ -39,6 +39,7 @@ resources/sngrep.sh
 #FusionPBX
 rm /usr/src/fusionpbx/resources/fusionpbx.sh
 cd /usr/src/fusionpbx/resources/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/fusionpbx.sh
+chmod +x /usr/src/fusionpbx/resources/fusionpbx.sh
 cd /usr/src/fusionpbx/
 resources/fusionpbx.sh
 
