@@ -37,10 +37,10 @@ resources/iptables.sh
 resources/sngrep.sh
 
 #FusionPBX
-rm /usr/src/fusionpbx/resources/fusionpbx.sh
-cd /usr/src/fusionpbx/resources/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/fusionpbx.sh
-chmod +x /usr/src/fusionpbx/resources/fusionpbx.sh
-cd /usr/src/fusionpbx/
+rm /usr/src/fusionpbx-install.sh/debian/resources/fusionpbx.sh
+cd /usr/src/fusionpbx-install.sh/debian/resources/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/fusionpbx.sh
+chmod +x /usr/src/fusionpbx-install.sh/debian/resources/fusionpbx.sh
+cd /usr/src/fusionpbx-install.sh/debian/
 resources/fusionpbx.sh
 
 #PHP
@@ -65,6 +65,6 @@ server_address=$(hostname -I)
 resources/finish.sh
 
 #Postinstall configuration
-cd /usr/src/fusionpbx/resources/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/postinstall.sh
-chmod +x /usr/src/fusionpbx/resources/postinstall.sh
+cd /usr/src/fusionpbx-install.sh/debian/resources/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/postinstall.sh
+chmod +x /usr/src/fusionpbx-install.sh/debian/resources/postinstall.sh
 postinstall.sh
