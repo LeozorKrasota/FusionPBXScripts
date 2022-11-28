@@ -33,6 +33,9 @@ mkdir -p /var/cache/fusionpbx
 chown -R www-data:www-data /var/cache/fusionpbx
 
 #get the source code
+#For testing
+system_version="master"
+branch="-b master"
 git clone https://github.com/LeozorKrasota/fusionpbx.git /var/www/fusionpbx
 #git clone $branch https://github.com/fusionpbx/fusionpbx.git /var/www/fusionpbx
 chown -R www-data:www-data /var/www/fusionpbx
