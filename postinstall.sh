@@ -2,6 +2,7 @@
 
 # Останавливаем event guard FusionPBX
 systemctl stop event_guard
+systemctl disable event_guard
 systemctl daemon-reload
 
 # Меняем экшины Fail2ban
