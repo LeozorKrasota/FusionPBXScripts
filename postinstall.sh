@@ -36,18 +36,18 @@ rm freeswitch-sounds-ru-RU-elena-8000-1.0.13.tar.gz
 rm freeswitch-sounds-ru-RU-elena-16000-1.0.13.tar.gz
 rm freeswitch-sounds-ru-RU-elena-32000-1.0.13.tar.gz
 rm freeswitch-sounds-ru-RU-elena-48000-1.0.51.tar.gz
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/ascii /usr/share/freeswitch/sounds/en/us/callie/ascii
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/conference /usr/share/freeswitch/sounds/en/us/callie/conference
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/currency /usr/share/freeswitch/sounds/en/us/callie/currency
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/digits /usr/share/freeswitch/sounds/en/us/callie/digits
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/directory /usr/share/freeswitch/sounds/en/us/callie/directory
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/ivr /usr/share/freeswitch/sounds/en/us/callie/ivr
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/misc /usr/share/freeswitch/sounds/en/us/callie/misc
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/phonetic-ascii /usr/share/freeswitch/sounds/en/us/callie/phonetic-ascii
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/time /usr/share/freeswitch/sounds/en/us/callie/time
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/users /usr/share/freeswitch/sounds/en/us/callie/users
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/voicemail /usr/share/freeswitch/sounds/en/us/callie/voicemail
-cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/zrtp /usr/share/freeswitch/sounds/en/us/callie/zrtp
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/ascii /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/conference /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/currency /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/digits /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/directory /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/ivr /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/misc /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/phonetic-ascii /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/time /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/users /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/voicemail /usr/share/freeswitch/sounds/en/us/callie
+cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/zrtp /usr/share/freeswitch/sounds/en/us/callie
 rm -R /usr/share/freeswitch/sounds/en/us/callie/ru
 
 # Перезадаем часовой пояс машины
