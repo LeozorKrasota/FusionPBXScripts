@@ -37,10 +37,6 @@ resources/iptables.sh
 resources/sngrep.sh
 
 #FusionPBX
-rm /usr/src/fusionpbx-install.sh/debian/resources/fusionpbx.sh
-cd /usr/src/fusionpbx-install.sh/debian/resources/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/fusionpbx.sh
-chmod +x /usr/src/fusionpbx-install.sh/debian/resources/fusionpbx.sh
-cd /usr/src/fusionpbx-install.sh/debian/
 resources/fusionpbx.sh
 
 #PHP
