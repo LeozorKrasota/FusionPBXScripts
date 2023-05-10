@@ -11,4 +11,5 @@ cd /usr/src && git clone https://github.com/LeozorKrasota/FusionPBXScripts.git
 
 #change the working directory
 cd /usr/src/FusionPBXScripts
+#Install FusionPBX and other components
 ./install.sh > /root/install.log
