@@ -61,6 +61,6 @@ server_address=$(hostname -I)
 resources/finish.sh
 
 #Postinstall configuration
-cd /usr/src/fusionpbx-install.sh/debian/resources/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/postinstall.sh
-chmod +x /usr/src/fusionpbx-install.sh/debian/resources/postinstall.sh
+cd /usr/src/FusionPBXScripts/resources/
+chmod +x postinstall.sh
 ./postinstall.sh
