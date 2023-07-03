@@ -16,7 +16,7 @@ chmod 600 /etc/apt/auth.conf
 echo "deb [signed-by=/usr/share/keyrings/signalwire-freeswitch-repo.gpg] https://freeswitch.signalwire.com/repo/deb/debian-release/ `lsb_release -sc` main" > /etc/apt/sources.list.d/freeswitch.list
 echo "deb-src [signed-by=/usr/share/keyrings/signalwire-freeswitch-repo.gpg] https://freeswitch.signalwire.com/repo/deb/debian-release/ `lsb_release -sc` main" >> /etc/apt/sources.list.d/freeswitch.list
 apt-get update && apt-get upgrade
-apt-get build-dep freeswitch
+apt-get build-dep freeswitch -y
 
 #apt-get install -y freeswitch-video-deps-most
 
