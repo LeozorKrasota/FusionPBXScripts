@@ -20,8 +20,11 @@ apt-get build-dep freeswitch
 
 #apt-get install -y freeswitch-video-deps-most
 
-git clone https://github.com/LeozorKrasota/Freeswitch1.2.7.git /usr/src/freeswitch
-cd /usr/src/freeswitch
+cd /usr/src/
+git clone https://github.com/signalwire/freeswitch.git -bv1.10 freeswitch
+cd freeswitch
+
+git config pull.rebase true
 
 sed -i /usr/src/freeswitch/modules.conf -e s:'#applications/mod_avmd:applications/mod_avmd:'
 sed -i /usr/src/freeswitch/modules.conf -e s:'#applications/mod_callcenter:applications/mod_callcenter:'
