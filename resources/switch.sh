@@ -9,9 +9,9 @@ cd "$(dirname "$0")"
 
 if [ .$switch_source = .true ]; then
 	if [ ."$switch_branch" = "master" ]; then
-		switch/source-master.sh > /root/source-master-switch.log
+		switch/source-master.sh
 	else
-		switch/source-release.sh > /root/source-release-switch.log
+		switch/source-release.sh
 	fi
 
 	#add sounds and music files
@@ -32,9 +32,9 @@ fi
 if [ .$switch_package = .true ]; then
 	if [ ."$switch_branch" = "master" ]; then
 		if [ .$switch_package_all = .true ]; then
-			switch/package-master-all.sh > /root/package-master-all-switch.log
+			switch/package-master-all.sh
 		else
-			switch/package-master.sh > /root/package-master-switch.log
+			switch/package-master.sh
 		fi
 	else
 		if [ .$switch_package_all = .true ]; then
