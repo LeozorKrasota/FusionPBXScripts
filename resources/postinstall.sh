@@ -50,5 +50,19 @@ cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/voicemail /usr/shar
 cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/zrtp /usr/share/freeswitch/sounds/en/us/callie
 rm -R /usr/share/freeswitch/sounds/en/us/callie/ru
 
+# Добавляем скрипты, настраиваем кронтаб и ротацию логов
+cd /home/ratibor
+wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/check_and_restart_event_socket.sh
+wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/check_disk_space_cron.sh
+chmod +x check_and_restart_event_socket.sh
+chmod +x check_disk_space_cron.sh
+wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/newcrontab
+crontab newcrontab
+rm newcrontab
+cd /etc/logrotate.d
+rm exim4-base
+wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/exim4-base
+chown root:root exim4-base
+
 # Перезадаем часовой пояс машины
 timedatectl set-timezone Europe/Kiev
