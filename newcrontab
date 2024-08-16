@@ -1,0 +1,3 @@
+*/5 * * * * /home/ratibor/check_and_restart_event_socket.sh
+0 0 * * * /home/ratibor/check_disk_space_cron.sh
+
