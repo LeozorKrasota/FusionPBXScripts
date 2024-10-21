@@ -19,10 +19,11 @@ rm /etc/fail2ban/jail.local
 cd /etc/fail2ban/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/jail.local
 chmod +x /etc/fail2ban/jail.local
 
-#Обновляем фильры для посика в логе Freeswitch
+#Обновляем фильры для поиска в логе Freeswitch
 cd /etc/fail2ban/filter.d
 rm freeswitch.conf
 wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/refs/heads/main/freeswitch.conf
+chown root:root freeswitch.conf
 
 # Рестартим Fail2ban для применения новых конфигов
 systemctl restart fail2ban
