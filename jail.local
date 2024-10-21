@@ -12,7 +12,7 @@ bantime  = 86400
 
 [freeswitch]
 enabled  = true
-port     = 5060
+port     = 5060:5091
 protocol = udp
 filter   = freeswitch
 logpath  = /var/log/freeswitch/freeswitch.log
