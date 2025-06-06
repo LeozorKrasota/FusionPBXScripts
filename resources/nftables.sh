@@ -14,10 +14,10 @@ verbose "Configuring nftables"
 #run iptables commands
 nft add rule ip filter INPUT iifname "lo" counter accept
 nft add rule ip filter INPUT ct state related,established  counter accept
-#nft add rule ip filter INPUT tcp dport 22 counter accept
-nft add rule ip filter INPUT ip saddr 195.138.67.124 tcp dport 22 counter accept
-nft add rule ip filter INPUT ip saddr 195.138.67.125 tcp dport 22 counter accept
-nft add rule ip filter INPUT ip saddr 195.138.66.127 tcp dport 22 counter accept
+nft add rule ip filter INPUT tcp dport 22 counter accept
+#nft add rule ip filter INPUT ip saddr 195.138.67.124 tcp dport 22 counter accept
+#nft add rule ip filter INPUT ip saddr 195.138.67.125 tcp dport 22 counter accept
+#nft add rule ip filter INPUT ip saddr 195.138.66.127 tcp dport 22 counter accept
 nft add rule ip filter INPUT tcp dport 80 counter accept
 nft add rule ip filter INPUT tcp dport 443 counter accept
 nft add rule ip filter INPUT tcp dport 7443 counter accept
