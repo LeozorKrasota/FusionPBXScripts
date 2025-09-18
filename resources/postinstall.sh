@@ -72,3 +72,5 @@ chown root:root exim4-base
 
 # Перезадаем часовой пояс машины
 timedatectl set-timezone Europe/Kiev
+
+systemctl reboot
