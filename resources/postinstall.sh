@@ -78,5 +78,8 @@ hostnamectl set-hostname $vpshostname
 # Перезадаем часовой пояс машины
 timedatectl set-timezone Europe/Kiev
 
+# Для корректной автозагрузки
+sed -i 's/quiet/nomodeset/g' /etc/default/grub
+
 # Принудительно перезагружаем ОС
 systemctl reboot
