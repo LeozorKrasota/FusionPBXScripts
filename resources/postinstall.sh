@@ -70,6 +70,11 @@ rm exim4-base
 wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/exim4-base
 chown root:root exim4-base
 
+# Меняем hostname машины на нужный с гипервизора
+vpsip=`ip r | grep kernel | awk '{print $9}'`
+vpshostname=`host $vpsip | awk '{print $5}'`
+hostnamectl set-hostname $vpshostname
+
 # Перезадаем часовой пояс машины
 timedatectl set-timezone Europe/Kiev
 
