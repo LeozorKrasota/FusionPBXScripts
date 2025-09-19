@@ -80,7 +80,8 @@ timedatectl set-timezone Europe/Kiev
 
 # Для корректной автозагрузки
 sed -i 's/quiet/nomodeset/g' /etc/default/grub
-update-grub
+#update-grub
+grub-mkconfig -o /boot/grub/grub.cfg
 
 # Принудительно перезагружаем ОС
 systemctl reboot
