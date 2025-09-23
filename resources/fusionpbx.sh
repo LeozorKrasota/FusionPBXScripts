@@ -28,5 +28,5 @@ mkdir -p /var/cache/fusionpbx
 chown -R www-data:www-data /var/cache/fusionpbx
 
 #get the source code
-git clone https://github.com/LeozorKrasota/fusionpbx.git /var/www/fusionpbx
+git clone --branch 5.0.5 https://github.com/LeozorKrasota/fusionpbx.git /var/www/fusionpbx
 chown -R www-data:www-data /var/www/fusionpbx
