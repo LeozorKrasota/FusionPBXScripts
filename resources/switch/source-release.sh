@@ -102,7 +102,7 @@ if [ $switch_branch = "stable" ]; then
 	if [ $(echo "$switch_version" | tr -d '.') -gt 1100 ]; then
 		#git clone -b $switch_version --single-branch https://github.com/fusionpbx/freeswitch freeswitch-$switch_version
 		git clone https://github.com/LeozorKrasota/freeswitch.git freeswitch-$switch_version
-  		git checkout $switch_version
+  		#git checkout $switch_version
 
 		#wget http://files.freeswitch.org/freeswitch-releases/freeswitch-$switch_version.-release.zip
 		#unzip freeswitch-$switch_version.-release.zip
