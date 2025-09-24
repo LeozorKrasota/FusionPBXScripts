@@ -21,13 +21,13 @@ database_name=fusionpbx                     # Database name (safe characters A-Z
 database_username=fusionpbx                 # Database username (safe characters A-Z, a-z, 0-9)
 database_password=random                    # random or a custom value (safe characters A-Z, a-z, 0-9)
 database_repo=official                      # PostgreSQL official, system
-database_version=13                         # requires repo official
+database_version=17                         # requires repo official
 database_host=127.0.0.1                     # hostname or IP address
 database_port=5432                          # port number
 database_backup=false                       # true or false
 
 # General Settings
-php_version=8.1                             # PHP version 8.3, 8.2, 8.1
+php_version=8.2                             # PHP version 8.3, 8.2, 8.1
 letsencrypt_folder=true                     # true or false
 
 # Optional Applications
