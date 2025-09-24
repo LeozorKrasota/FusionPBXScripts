@@ -32,6 +32,8 @@ sed -i "s/zzz/$database_password/g" /etc/cron.daily/fusionpbx-maintenance
 
 #add the config.conf
 mkdir -p /etc/fusionpbx
+chmod 777 /etc
+chmod 777 /etc/fusionpbx/
 cp fusionpbx/config.conf /etc/fusionpbx
 sed -i /etc/fusionpbx/config.conf -e s:"{database_host}:$database_host:"
 sed -i /etc/fusionpbx/config.conf -e s:"{database_name}:$database_name:"
