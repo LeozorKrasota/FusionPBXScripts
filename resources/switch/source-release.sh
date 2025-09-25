@@ -55,8 +55,8 @@ if [ $(echo "$switch_version" | tr -d '.') -gt 1100 ]; then
 	# sofia-sip
 	cd /usr/src
 	#git clone https://github.com/freeswitch/sofia-sip.git sofia-sip
-	#wget https://github.com/freeswitch/sofia-sip/archive/refs/tags/v$sofia_version.zip
-	wget https://github.com/LeozorKrasota/freeswitch/releases/download/freeswitch/v$sofia_version.zip
+	wget https://github.com/freeswitch/sofia-sip/archive/refs/tags/v$sofia_version.zip
+	#wget https://github.com/LeozorKrasota/freeswitch/releases/download/freeswitch/v$sofia_version.zip
 	unzip v$sofia_version.zip
 	cd sofia-sip-$sofia_version
 	sh autogen.sh
