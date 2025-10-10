@@ -75,7 +75,6 @@ iptables -A INPUT -j DROP -p udp --dport 5060:5091 -m string --string "exec." --
 iptables -A INPUT -j DROP -p tcp --dport 5060:5091 -m string --string "exec." --algo bm --icase
 iptables -A INPUT -j DROP -p udp --dport 5060:5091 -m string --string "multipart/mixed;boundary" --algo bm --icase
 iptables -A INPUT -j DROP -p tcp --dport 5060:5091 -m string --string "multipart/mixed;boundary" --algo bm --icase
-iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 iptables -A INPUT -s 195.138.67.124/32 -p tcp -m tcp --dport 22 -j ACCEPT
 iptables -A INPUT -s 195.138.67.125/32 -p tcp -m tcp --dport 22 -j ACCEPT
 iptables -A INPUT -s 195.138.66.127/32 -p tcp -m tcp --dport 22 -j ACCEPT
