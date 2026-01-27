@@ -18,21 +18,9 @@ filter   = freeswitch
 logpath  = /var/log/freeswitch/freeswitch.log
 action   = iptables-multiport[name=freeswitch_udp, protocol=udp, port="5060:5091", blocktype=DROP]
 #           sendmail-whois[name=FreeSwitch, dest=, sender=]
-maxretry = 2
-findtime = 60
-bantime  = 3600
-
-[fusionpbx-404]
-enabled  = false
-port     = 5060:5091
-protocol = all
-filter   = fusionpbx-404
-logpath  = /var/log/freeswitch/freeswitch.log
-action   = iptables-multiport[name=fusionpbx-404-80, protocol=tcp, port="80", blocktype=DROP]
-           iptables-multiport[name=fusionpbx-404-443, protocol=tcp, port="443", blocktype=DROP]
 maxretry = 6
 findtime = 60
-bantime  = 86400
+bantime  = 3600
 
 [fusionpbx]
 enabled  = true
@@ -40,8 +28,8 @@ port     = 80,443
 protocol = tcp
 filter   = fusionpbx
 logpath  = /var/log/auth.log
-action   = iptables-multiport[name=fusionpbx-80, protocol=tcp, port="80", blocktype=DROP]
-           iptables-multiport[name=fusionpbx-443, protocol=tcp, port="443", blocktype=DROP]
+action   = iptables[name=fusionpbx-80, protocol=tcp, port="80", blocktype=DROP]
+           iptables[name=fusionpbx-443, protocol=tcp, port="443", blocktype=DROP]
 maxretry = 20
 findtime = 60
 bantime  = 3600
@@ -52,8 +40,8 @@ port     = 80,443
 protocol = tcp
 filter   = fusionpbx-mac
 logpath  = /var/log/syslog
-action   = iptables-multiport[name=fusionpbx-mac-80, protocol=tcp, port="80", blocktype=DROP]
-           iptables-multiport[name=fusionpbx-mac-443, protocol=tcp, port="443", blocktype=DROP]
+action   = iptables[name=fusionpbx-mac-80, protocol=tcp, port="80", blocktype=DROP]
+           iptables[name=fusionpbx-mac-443, protocol=tcp, port="443", blocktype=DROP]
 maxretry = 10
 findtime = 60
 bantime  = 86400
@@ -64,8 +52,8 @@ port     = 80,443
 protocol = tcp
 filter   = nginx-404
 logpath  = /var/log/nginx/access*.log
-action   = iptables-multiport[name=nginx-404-80, protocol=tcp, port="80", blocktype=DROP]
-           iptables-multiport[name=nginx-404-443, protocol=tcp, port="443", blocktype=DROP]
+action   = iptables[name=nginx-404-80, protocol=tcp, port="80", blocktype=DROP]
+           iptables[name=nginx-404-443, protocol=tcp, port="443", blocktype=DROP]
 bantime  = 3600
 findtime = 60
 maxretry = 300
@@ -78,8 +66,8 @@ port     = 80,443
 protocol = tcp
 filter   = nginx-dos
 logpath  = /var/log/nginx/access*.log
-action   = iptables-multiport[name=nginx-dos-80, protocol=tcp, port="80", blocktype=DROP]
-           iptables-multiport[name=nginx-dos-443, protocol=tcp, port="443", blocktype=DROP]
+action   = iptables[name=nginx-dos-80, protocol=tcp, port="80", blocktype=DROP]
+           iptables[name=nginx-dos-443, protocol=tcp, port="443", blocktype=DROP]
 findtime = 60
 bantime  = 86400
 maxretry = 800
