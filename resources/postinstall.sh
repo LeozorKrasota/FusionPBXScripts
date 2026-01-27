@@ -5,10 +5,10 @@ systemctl stop event_guard
 systemctl disable event_guard
 systemctl daemon-reload
 
-# Меняем экшины Fail2ban
-cp /etc/fail2ban/action.d/iptables.conf /etc/fail2ban/action.d/iptables.conf.backup
-rm /etc/fail2ban/action.d/iptables.conf
-cd /etc/fail2ban/action.d/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/iptables.conf
+# Уже НЕ меняем экшины Fail2ban
+# cp /etc/fail2ban/action.d/iptables.conf /etc/fail2ban/action.d/iptables.conf.backup
+# rm /etc/fail2ban/action.d/iptables.conf
+# cd /etc/fail2ban/action.d/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/iptables.conf
 
 # Создаем файл чтения логов Fail2ban
 cd /etc/fail2ban/jail.d/ && wget https://raw.githubusercontent.com/LeozorKrasota/FusionPBXScripts/main/freeswitch.local
