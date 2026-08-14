@@ -87,8 +87,8 @@ timedatectl set-ntp true
 
 # Добавляем Proxy для APT
 touch /etc/apt/apt.conf.d/99proxy
-echo "Acquire::http::Proxy "http://proxy.tenet.ua:3128/";" >> /etc/apt/apt.conf.d/99proxy
-echo "Acquire::https::Proxy "http://proxy.tenet.ua:3128/";" >> /etc/apt/apt.conf.d/99proxy
+echo 'Acquire::http::Proxy "http://proxy.tenet.ua:3128/";' >> /etc/apt/apt.conf.d/99proxy
+echo 'Acquire::https::Proxy "http://proxy.tenet.ua:3128/";' >> /etc/apt/apt.conf.d/99proxy
 
 # Для корректной автозагрузки
 sed -i 's/quiet/nomodeset/g' /etc/default/grub
