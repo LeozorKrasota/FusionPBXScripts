@@ -79,7 +79,7 @@ hostnamectl set-hostname $vpshostname
 timedatectl set-timezone Europe/Kiev
 
 # Устанавливаем и настраиваем Chrony NTP Server
-apt install chrony
+apt install chrony -y
 sed -i 's/pool /#pool /g' /etc/chrony/chrony.conf
 sed -i '/#pool /a\server 195.138.80.34 iburst\nserver 195.138.80.84 iburst\nserver 195.138.80.85 iburst' /etc/chrony/chrony.conf
 systemctl restart chrony
