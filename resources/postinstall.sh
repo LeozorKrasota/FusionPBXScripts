@@ -78,6 +78,18 @@ hostnamectl set-hostname $vpshostname
 # Перезадаем часовой пояс машины
 timedatectl set-timezone Europe/Kiev
 
+# Устанавливаем и настраиваем Chrony NTP Server
+apt install chrony
+sed -i 's/pool /#pool /g' /etc/chrony/chrony.conf
+sed -i '/#pool /a\server 195.138.80.34 iburst\nserver 195.138.80.84 iburst\nserver 195.138.80.85 iburst' /etc/chrony/chrony.conf
+systemctl restart chrony
+timedatectl set-ntp true
+
+# Добавляем Proxy для APT
+touch /etc/apt/apt.conf.d/99proxy
+echo "Acquire::http::Proxy "http://proxy.tenet.ua:3128/";" >> /etc/apt/apt.conf.d/99proxy
+echo "Acquire::https::Proxy "http://proxy.tenet.ua:3128/";" >> /etc/apt/apt.conf.d/99proxy
+
 # Для корректной автозагрузки
 sed -i 's/quiet/nomodeset/g' /etc/default/grub
 #update-grub
