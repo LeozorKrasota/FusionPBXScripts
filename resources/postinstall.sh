@@ -76,7 +76,7 @@ vpshostname=`host $vpsip | awk '{print $5}'`
 hostnamectl set-hostname $vpshostname
 
 # Перезадаем часовой пояс машины
-timedatectl set-timezone Europe/Kiev
+timedatectl set-timezone Europe/Kyiv
 
 # Устанавливаем и настраиваем Chrony NTP Server
 apt install chrony -y
