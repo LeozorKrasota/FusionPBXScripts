@@ -34,13 +34,13 @@ wget http://files.freeswitch.org/releases/sounds/freeswitch-sounds-ru-RU-elena-8
 wget http://files.freeswitch.org/releases/sounds/freeswitch-sounds-ru-RU-elena-16000-1.0.51.tar.gz
 wget http://files.freeswitch.org/releases/sounds/freeswitch-sounds-ru-RU-elena-32000-1.0.51.tar.gz
 wget http://files.freeswitch.org/releases/sounds/freeswitch-sounds-ru-RU-elena-48000-1.0.51.tar.gz
-tar -xzvf freeswitch-sounds-ru-RU-elena-8000-1.0.13.tar.gz
-tar -xzvf freeswitch-sounds-ru-RU-elena-16000-1.0.13.tar.gz
-tar -xzvf freeswitch-sounds-ru-RU-elena-32000-1.0.13.tar.gz
+tar -xzvf freeswitch-sounds-ru-RU-elena-8000-1.0.51.tar.gz
+tar -xzvf freeswitch-sounds-ru-RU-elena-16000-1.0.51.tar.gz
+tar -xzvf freeswitch-sounds-ru-RU-elena-32000-1.0.51.tar.gz
 tar -xzvf freeswitch-sounds-ru-RU-elena-48000-1.0.51.tar.gz
-rm freeswitch-sounds-ru-RU-elena-8000-1.0.13.tar.gz
-rm freeswitch-sounds-ru-RU-elena-16000-1.0.13.tar.gz
-rm freeswitch-sounds-ru-RU-elena-32000-1.0.13.tar.gz
+rm freeswitch-sounds-ru-RU-elena-8000-1.0.51.tar.gz
+rm freeswitch-sounds-ru-RU-elena-16000-1.0.51.tar.gz
+rm freeswitch-sounds-ru-RU-elena-32000-1.0.51.tar.gz
 rm freeswitch-sounds-ru-RU-elena-48000-1.0.51.tar.gz
 cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/ascii /usr/share/freeswitch/sounds/en/us/callie
 cp -Rf /usr/share/freeswitch/sounds/en/us/callie/ru/RU/elena/conference /usr/share/freeswitch/sounds/en/us/callie
