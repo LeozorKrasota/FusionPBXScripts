@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. ./config.sh
+
 # Останавливаем event guard FusionPBX
 systemctl stop event_guard
 systemctl disable event_guard
