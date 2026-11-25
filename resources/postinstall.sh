@@ -30,9 +30,9 @@ systemctl restart fail2ban
 
 # Обновляем звуковые файлы Freeswitch
 cd /usr/share/freeswitch/sounds/en/us/callie
-wget http://files-sync.freeswitch.org/freeswitch-sounds-ru-RU-elena-8000-1.0.13.tar.gz
-wget http://files-sync.freeswitch.org/freeswitch-sounds-ru-RU-elena-16000-1.0.13.tar.gz
-wget http://files-sync.freeswitch.org/freeswitch-sounds-ru-RU-elena-32000-1.0.13.tar.gz
+wget http://files.freeswitch.org/releases/sounds/freeswitch-sounds-ru-RU-elena-8000-1.0.51.tar.gz
+wget http://files.freeswitch.org/releases/sounds/freeswitch-sounds-ru-RU-elena-16000-1.0.51.tar.gz
+wget http://files.freeswitch.org/releases/sounds/freeswitch-sounds-ru-RU-elena-32000-1.0.51.tar.gz
 wget http://files.freeswitch.org/releases/sounds/freeswitch-sounds-ru-RU-elena-48000-1.0.51.tar.gz
 tar -xzvf freeswitch-sounds-ru-RU-elena-8000-1.0.13.tar.gz
 tar -xzvf freeswitch-sounds-ru-RU-elena-16000-1.0.13.tar.gz
